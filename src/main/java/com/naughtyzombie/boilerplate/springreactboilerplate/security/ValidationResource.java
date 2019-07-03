@@ -19,6 +19,7 @@ public class ValidationResource {
 	@RequestMapping(path = "/validate/{username}", method = GET)
 	public String validate(@PathVariable(name = "username") String user) {
 		//log.info("Authentication Validation Request for Request {}", user);
+		System.out.println("VALIDATION");
 		return "VALIDATED";
 	}
 }
